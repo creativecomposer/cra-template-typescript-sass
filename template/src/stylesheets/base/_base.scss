@@ -5,6 +5,7 @@
 /**
  * CSS reset
  */
+
 html,
 body,
 p,
@@ -53,11 +54,16 @@ textarea {
   margin: 0;
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
+
 html {
   box-sizing: border-box;
+  font-size: 14px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -79,9 +85,5 @@ th:not([align]) {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-html {
-  font-size: 14px;
 }
 
