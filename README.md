@@ -9,12 +9,12 @@ so as to be able to use absolute paths in `import` statements.
 
 ## How to use the template
 
-To use this template, add `--template typescript-sass` when creating a new app.
+This template is not published to npm.
 
-For example:
+Therefore, you need to clone the repo, and run the following command to create a new app.
 
-```sh
-npx create-react-app my-app --template typescript-sass
+```
+npx create-react-app my-app --template file:../path/to/your/template/cra-template-typescript-sass
 
 # or
 
