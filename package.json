@@ -1,0 +1,21 @@
+{
+  "name": "cra-template-typescript-sass",
+  "version": "0.0.1",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "typescript",
+    "typescript-sass"
+  ],
+  "main": "template.json",
+  "description": "The TypeScript + Sass template for Create React App.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
