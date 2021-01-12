@@ -14,11 +14,11 @@ This template is not published to npm.
 Therefore, you need to clone the repo, and run the following command to create a new app.
 
 ```
-npx create-react-app my-app --template file:../path/to/your/template/cra-template-typescript-sass
+npx create-react-app my-app --template file:/path/to/your/template/cra-template-typescript-sass
 
 # or
 
-yarn create react-app my-app --template typescript-sass
+yarn create react-app my-app --template file:/path/to/your/template/cra-template-typescript-sass
 ```
 
 ## More information
