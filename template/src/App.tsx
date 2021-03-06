@@ -3,11 +3,13 @@ import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header className="App-header">
-        <p>App Header</p>
+        <p>The App Header</p>
       </header>
-    </div>
+      <main role="main"></main>
+      <footer></footer>
+    </>
   );
 }
 
