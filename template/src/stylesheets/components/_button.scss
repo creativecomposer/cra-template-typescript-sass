@@ -2,9 +2,59 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.buttonPrimary {
-  background-color: $brightGreen;
-  cursor: pointer;
+@mixin button-common() {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: bold;
   height: 40px;
   padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.35s ease 0s, background-color 0.35s ease 0s,
+    border-color 0.35s ease 0s;
+  user-select: none;
+}
+
+.button-primary {
+  @include button-common();
+
+  background-color: $accentColor;
+  border-color: transparent;
+  color: $primaryColor;
+
+  &:disabled {
+    cursor: default;
+    background-color: lighten($color: $accentColor, $amount: 25%);
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color: $accentColor, $amount: 10%);
+    }
+  }
+}
+
+.button-secondary {
+  @include button-common();
+
+  background-color: $primaryColor;
+  border-color: $accentColor;
+  color: $accentColor;
+
+  &:disabled {
+    cursor: default;
+    background-color: lightgray;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color: $primaryColor, $amount: 10%);
+    }
+  }
 }

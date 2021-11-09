@@ -3,15 +3,14 @@
 // -----------------------------------------------------------------------------
 
 // colors
-$primaryColor: #3f5865;
-$brightGreen: #35ff4d;
-$pinkRed: #ff3079;
-$lightBlue: #62b4ff;
-$lightGrey: #bbbbc9;
+$blackColor: #000;
 $whiteColor: #fff;
+$primaryColor: #fff7f5;
+$secondaryColor: $blackColor;
+$accentColor: #ff7b1c;
+$accentLightColor: #ff9a1c;
 
 // Screen sizes
-
 $grid-breakpoints: (
   xs: 0,
   sm: 640px,
