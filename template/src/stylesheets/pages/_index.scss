@@ -1,0 +1,33 @@
+.index {
+  height: 100vh;
+
+  &__heading-wrapper {
+    @include flex($direction: column, $justify: space-evenly);
+
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    height: 6rem;
+    padding: 0 10px;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__description {
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__footer {
+    background-color: darken($color: $primaryColor, $amount: 10%);
+    bottom: 0;
+    padding: 10px 0 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}
